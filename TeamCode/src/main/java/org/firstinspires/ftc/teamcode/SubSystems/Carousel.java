@@ -23,10 +23,14 @@ public class Carousel implements SubSystem {
 
     public void runOnce() {
         if (config.gamePad1.right_bumper)
-            carouselMotor.setPower(medPower);
-        else if (config.gamePad1.left_bumper)
             carouselMotor.setPower(maxPower);
+        else if (config.gamePad1.left_bumper)
+            carouselMotor.setPower(medPower);
         else
             carouselMotor.setPower(0);
+        
+        config.telemetry.addData("Right/Left Bumper", "%b, %b",
+                    config.gamePad1.right_bumper, config.gamePad1.left_bumper);
+
     }
 }

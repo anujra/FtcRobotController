@@ -24,7 +24,6 @@ public class Drive implements SubSystem {
         leftBackDrive = config.hardwareMap.get(DcMotor.class, Config.leftBackDrive);
         rightBackDrive = config.hardwareMap.get(DcMotor.class, Config.rightBackDrive);
 
-
         // Most robots need the motors on one side to be reversed to drive forward.
         // When you first test your robot, push the left joystick forward
         // and flip the direction ( FORWARD <-> REVERSE ) of any wheel that runs backwards

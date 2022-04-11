@@ -5,7 +5,6 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
 @TeleOp(name="Basic: SimpleDrive", group="Linear Opmode")
 public class SimpleDrive extends LinearOpMode {
-
     // Config
     Config config = null;
     ManualRobot manualRobot = null;
