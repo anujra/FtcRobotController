@@ -14,16 +14,16 @@ public class Config {
     public Gamepad gamePad2 = null;
 
     // Drive system
-    public static final String leftFrontDrive = "motor0";
-    public static final String rightFrontDrive = "motor1";
-    public static final String leftBackDrive = "motor 3 :]";
-    public static final String rightBackDrive = "motor 2 :)";
+    public static final String rightFrontDrive = "rightFrontDrive";
+    public static final String rightBackDrive = "rightBackDrive";
+    public static final String leftFrontDrive = "leftFrontDrive";
+    public static final String leftBackDrive = "leftBackDrive";
 
-    public static final String boxServo = "boxServo";
-    public static final String intakeMotor = "intakeMotor";
+    public static final String rightFrontTest = "rightFrontTest";
+    public static final String leftFrontTest = "leftFrontTest";
     public static final String armMotor = "armMotor";
 
-    public static final String carouselMotor = "eyeballmotor";
+    //public static final String carouselMotor = "eyeballmotor";
 
     private ElapsedTime runtime = new ElapsedTime();
 

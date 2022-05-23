@@ -1,6 +1,6 @@
 package org.firstinspires.ftc.teamcode;
 
-import org.firstinspires.ftc.teamcode.SubSystems.Carousel;
+import org.firstinspires.ftc.teamcode.SubSystems.DualFront;
 import org.firstinspires.ftc.teamcode.SubSystems.Drive;
 import org.firstinspires.ftc.teamcode.SubSystems.SubSystem;
 
@@ -17,7 +17,7 @@ public class ManualRobot {
     public ManualRobot(Config cfg) {
         config = cfg;
         subSystems.add(new Drive(config));
-        subSystems.add(new Carousel(config));
+        subSystems.add(new DualFront(config));
     }
 
     //
