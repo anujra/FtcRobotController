@@ -28,7 +28,7 @@ public class Config {
     private ElapsedTime runtime = new ElapsedTime();
 
     // Constructor
-    Config(Telemetry tlm, HardwareMap hwm, Gamepad gmp1, Gamepad gmp2) {
+    public Config(Telemetry tlm, HardwareMap hwm, Gamepad gmp1, Gamepad gmp2) {
         this.telemetry = tlm;
         this.hardwareMap = hwm;
         this.gamePad1 = gmp1;
