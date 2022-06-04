@@ -9,13 +9,15 @@ import org.firstinspires.ftc.teamcode.ManualRobot;
 import org.firstinspires.ftc.teamcode.drive.SampleMecanumDrive;
 import org.firstinspires.ftc.teamcode.trajectorysequence.TrajectorySequence;
 
-@TeleOp(name = "Ducks Red", group = "Linear Opmode")
+@TeleOp(name = "Simple Auto", group = "Linear Opmode")
 public class SimpleAuto extends LinearOpMode {
     public void runOpMode() {
         Config config;
         config = new Config(telemetry, hardwareMap, gamepad1, gamepad2);
         ManualRobot robot = new ManualRobot(config);
         SampleMecanumDrive drive = new SampleMecanumDrive(hardwareMap);
+
+        waitForStart();
 
         TrajectorySequence trajectory = drive.trajectorySequenceBuilder(new Pose2d())
                 .forward(30)
@@ -28,7 +30,6 @@ public class SimpleAuto extends LinearOpMode {
                 .turn(Math.toRadians(90))
                 .build();
 
-        waitForStart();
 
         drive.followTrajectorySequence(trajectory);
 
