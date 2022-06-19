@@ -6,7 +6,6 @@ import java.text.SimpleDateFormat
 apply plugin: 'com.android.library'
 
 android {
-
     defaultConfig {
         minSdkVersion 23
         //noinspection ExpiredTargetSdkVersion
@@ -19,6 +18,10 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_7
         targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4G"
     }
 }
 
